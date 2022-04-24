@@ -7,6 +7,7 @@
 }
 body {
     min-height: 100vh;
+    background: linear-gradient(72deg, rgb(181, 41, 231), rgb(216 43 43));
 }
 
 
