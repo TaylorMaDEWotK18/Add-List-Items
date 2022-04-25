@@ -21,7 +21,22 @@ form {
     background: #fff;
     box-shadow: -3px 6px 4px #222;
 }
-
+form input {
+    width: 250px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+}
+form button {
+    width: 50px;
+    height: 40px;
+    border: none;
+    background: teal;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
 
 
 /*Step 6-Copied over CSS portion in google font make up and set margin, padding and box-sizing
@@ -29,3 +44,7 @@ form {
 /*Step 7-Set up flex directing in the body and centered it to make it look fanstastic 
 
 /*Step 8-Styled h1 and gave it top margin and then took on the form and gave it margin top space, background color and box shadown!
+
+/*Step 9-Styled to form input, increased the width size, height, took off the border and that annoting outline and gave mild padding
+
+/*Step 10-Styled form button and completely made it fit to the search bar, adjusted background color and color of plus symbol. Also gave it the awesome pointer when you hover over it
