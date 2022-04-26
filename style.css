@@ -39,7 +39,10 @@ form button {
 }
 .container {
     margin-top: 50px;
-    margin-right: 100px;
+}
+ul {
+    list-style: none;
+    width: 500px;
 }
 
 
@@ -52,3 +55,5 @@ form button {
 /*Step 9-Styled to form input, increased the width size, height, took off the border and that annoting outline and gave mild padding
 
 /*Step 10-Styled form button and completely made it fit to the search bar, adjusted background color and color of plus symbol. Also gave it the awesome pointer when you hover over it
+
+/*Step 12-Styled container class and ul
