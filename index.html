@@ -21,16 +21,32 @@
     <div class="container">
         <ul>
             <li>Dev AT<span>x</span></li>
-            <li>Dev AT<span>x</span></li>
-            <li>Dev AT<span>x</span></li>
-            <li>Dev AT<span>x</span></li>
-            <li>Dev AT<span>x</span></li>
         </ul>
     </div>
+    <script>
+        const inputText = document.querySelector('#txt');
+        const myButton = document.querySelector('.btn-list');
+        const list = document.querySelector('.container ul');
+        myButton.addEventListener('click', (e)=>{
+            if(inputText.value != ""){
+                e.preventDefault();
+                //find out what preventDefault does and create li
+                const myLi = document.createElement('li');
+                myLi.innerHTML = inputText.value;
+                list.appendChild(myLi);
+                //Create span
+                const mySpan = document.createElement('span');
+                mySpan.innerHTML = 'x';
+                myLi.appendChild(mySpan);
+            }
+            //In order to clear out input field after adding list item add this (arrow down)
+            inputText.value = "";
+        })
+    </script>
 </body>
 </html>
 
-<!-- Step 1- Create form and inside form create input and button
+Step 1- Create form and inside form create input and button
 
 Step 2-Looked up 'font awesome 4.7 w3schools' and copied and paste in head. Added css link in head.
 
@@ -40,4 +56,14 @@ Step 4-Went to fontawesome.com and went into latest version at the bottom, searc
 
 Step 5-Created CSS file
 
-Step 11-Created div with container class and ul and li inside -->
+Step 11-Created div with container class and ul and li inside
+
+Step 13-Looks like were building some JS in HTML. Built script tags with querySelectors for #txt and .btn-list and .container ul
+
+Step 14-Create addEventListener for myButton, click and arrow function with if conditional
+
+Step 15-inputText.value and != "" in condition () and in code block made e.preventDefault(), const myLi with innerHTML = inputText.value, added list.appendChild(myLi)
+
+Step 16-Create span element so the 'x' shows up in the added list item
+
+Step 17-In order to clear out input bar after adding list item simply and inputText.value = "" outside of conditional
