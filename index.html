@@ -38,6 +38,10 @@
                 const myLi = document.createElement('li');
                 myLi.innerHTML = inputText.value;
                 list.appendChild(myLi);
+                //Create span
+                const mySpan = document.createElement('span');
+                mySpan.innerHTML = 'x';
+                myLi.appendChild(mySpan);
             }
         })
     </script>
@@ -61,3 +65,5 @@ Step 13-Looks like were building some JS in HTML. Built script tags with querySe
 Step 14-Create addEventListener for myButton, click and arrow function with if conditional
 
 Step 15-inputText.value and != "" in condition () and in code block made e.preventDefault(), const myLi with innerHTML = inputText.value, added list.appendChild(myLi)
+
+Step 16-Create span element so the 'x' shows up in the added list item
