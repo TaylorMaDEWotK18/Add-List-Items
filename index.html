@@ -21,10 +21,6 @@
     <div class="container">
         <ul>
             <li>Dev AT<span>x</span></li>
-            <li>Dev AT<span>x</span></li>
-            <li>Dev AT<span>x</span></li>
-            <li>Dev AT<span>x</span></li>
-            <li>Dev AT<span>x</span></li>
         </ul>
     </div>
     <script>
@@ -43,6 +39,8 @@
                 mySpan.innerHTML = 'x';
                 myLi.appendChild(mySpan);
             }
+            //In order to clear out input field after adding list item add this (arrow down)
+            inputText.value = "";
         })
     </script>
 </body>
@@ -67,3 +65,5 @@ Step 14-Create addEventListener for myButton, click and arrow function with if c
 Step 15-inputText.value and != "" in condition () and in code block made e.preventDefault(), const myLi with innerHTML = inputText.value, added list.appendChild(myLi)
 
 Step 16-Create span element so the 'x' shows up in the added list item
+
+Step 17-In order to clear out input bar after adding list item simply and inputText.value = "" outside of conditional
