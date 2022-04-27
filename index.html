@@ -32,7 +32,13 @@
         const myButton = document.querySelector('.btn-list');
         const list = document.querySelector('.container ul');
         myButton.addEventListener('click', (e)=>{
-
+            if(inputText.value != ""){
+                e.preventDefault();
+                //find out what preventDefault does and create li
+                const myLi = document.createElement('li');
+                myLi.innerHTML = inputText.value;
+                list.appendChild(myLi);
+            }
         })
     </script>
 </body>
@@ -52,4 +58,6 @@ Step 11-Created div with container class and ul and li inside
 
 Step 13-Looks like were building some JS in HTML. Built script tags with querySelectors for #txt and .btn-list and .container ul
 
-Step 14-Creat addEventListener for myButton, click and arrow function with if conditional
+Step 14-Create addEventListener for myButton, click and arrow function with if conditional
+
+Step 15-inputText.value and != "" in condition () and in code block made e.preventDefault(), const myLi with innerHTML = inputText.value, added list.appendChild(myLi)
