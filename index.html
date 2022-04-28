@@ -42,7 +42,9 @@
             for(let i=0; i<close.length; i++) {
                 close[i].addEventListener('click', ()=>{
                     close[i].parentElement.style.opacity = 0;
-                    // close[i].parentElement.style.display = "none";
+                    setTimeout(()=>{
+                        close[i].parentElement.style.display = "none";
+                    }, 500);
                 })
             }
             //In order to clear out input field after adding list item add this (arrow down)
@@ -79,3 +81,5 @@ Step 18-Create variable 'close' and assign querySelectorAll with span as the arg
 Step 19-Create forLoop with < close.length and inside code block loop close with addeventListener, in the parameter put 'click', the arrow function and inside close[i].parentElement.style.display = "none";
 
 Step 20-This is an awesome trick, instead of display 'none', we can comment it out and copy over the same code, except replace display with opacity and none with '0'
+
+Step 22-Created SetTimeout arrow function and inserted the 'display = none' part into function and comma 500 at the end to solve stacking issue when I would delete a list item
