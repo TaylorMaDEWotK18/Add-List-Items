@@ -41,7 +41,9 @@
             }
             const close = document.querySelectorAll('span');
             for(let i=1; i<close.length; i++) {
-                
+                close[i].addEventListener('click', ()=>{
+                    close[i].parentElement.style.display = "none";
+                })
             }
             //In order to clear out input field after adding list item add this (arrow down)
             inputText.value = "";
@@ -74,4 +76,4 @@ Step 17-In order to clear out input bar after adding list item simply and inputT
 
 Step 18-Create variable 'close' and assign querySelectorAll with span as the arguement
 
-Step 19-Create forLoop
+Step 19-Create forLoop with < close.length and inside code block loop close with addeventListener, in the parameter put 'click', the arrow function and inside close[i].parentElement.style.display = "none";
