@@ -20,7 +20,6 @@
     </form>
     <div class="container">
         <ul>
-            <li>Dev AT<span>x</span></li>
         </ul>
     </div>
     <script>
@@ -40,9 +39,10 @@
                 myLi.appendChild(mySpan);
             }
             const close = document.querySelectorAll('span');
-            for(let i=1; i<close.length; i++) {
+            for(let i=0; i<close.length; i++) {
                 close[i].addEventListener('click', ()=>{
-                    close[i].parentElement.style.display = "none";
+                    close[i].parentElement.style.opacity = 0;
+                    // close[i].parentElement.style.display = "none";
                 })
             }
             //In order to clear out input field after adding list item add this (arrow down)
@@ -77,3 +77,5 @@ Step 17-In order to clear out input bar after adding list item simply and inputT
 Step 18-Create variable 'close' and assign querySelectorAll with span as the arguement
 
 Step 19-Create forLoop with < close.length and inside code block loop close with addeventListener, in the parameter put 'click', the arrow function and inside close[i].parentElement.style.display = "none";
+
+Step 20-This is an awesome trick, instead of display 'none', we can comment it out and copy over the same code, except replace display with opacity and none with '0'
