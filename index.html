@@ -44,6 +44,7 @@
                     close[i].parentElement.style.opacity = 0;
                     setTimeout(()=>{
                         close[i].parentElement.style.display = "none";
+                        close[i].parentElement.remove();
                     }, 500);
                 })
             }
@@ -54,7 +55,7 @@
 </body>
 </html>
 
-Step 1- Create form and inside form create input and button
+<!-- Step 1- Create form and inside form create input and button
 
 Step 2-Looked up 'font awesome 4.7 w3schools' and copied and paste in head. Added css link in head.
 
@@ -82,4 +83,4 @@ Step 19-Create forLoop with < close.length and inside code block loop close with
 
 Step 20-This is an awesome trick, instead of display 'none', we can comment it out and copy over the same code, except replace display with opacity and none with '0'
 
-Step 22-Created SetTimeout arrow function and inserted the 'display = none' part into function and comma 500 at the end to solve stacking issue when I would delete a list item
+Step 22-Created SetTimeout arrow function and inserted the 'display = none' part into function and comma 500 at the end to solve stacking issue when I would delete a list item -->
