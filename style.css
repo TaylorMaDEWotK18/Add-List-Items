@@ -7,7 +7,7 @@
 }
 body {
     min-height: 100vh;
-    background: linear-gradient(72deg, rgb(189, 23, 239), rgb(216 43 43));
+    background: linear-gradient(72deg, rgb(20, 20, 179), rgb(216 43 43));
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@ form {
     box-shadow: -3px 6px 4px #222;
 }
 form input {
-    width: 250px;
+    width: 400px;
     height: 40px;
     border: none;
     outline: none;
